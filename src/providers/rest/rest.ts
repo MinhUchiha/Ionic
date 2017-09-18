@@ -16,12 +16,11 @@ export class RestProvider {
     console.log('Hello RestProvider Provider');
   }
 
-  apiUrl = 'http://192.168.10.108:3000/auth/sign_in';
+  apiUrl = 'http://192.168.10.108:3000/auth';
 
   signIn(data) {
-    console.log(data);
     return new Promise(resolve => {
-      this.http.post(this.apiUrl+'',JSON.stringify(data),{}).subscribe(data => {
+      this.http.post(this.apiUrl+'/sign_in',JSON.stringify(data)).subscribe(data => {
         resolve(data);
       }, err => {
         console.log(err);

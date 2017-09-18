@@ -43,4 +43,9 @@ export class LoginPage {
     this.navCtrl.push('page-main');
   }
 
+  resetpassword(){
+    console.log('Quên mật khẩu');
+    this.navCtrl.push('page-reset-password');
+  }
+
 }
