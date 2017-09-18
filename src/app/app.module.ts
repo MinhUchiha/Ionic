@@ -10,12 +10,18 @@ import { LoginPage } from '../pages/login/login';
 import { HttpClientModule } from '@angular/common/http';
 import { RestProvider } from '../providers/rest/rest';
 import {FormsModule} from "@angular/forms";
+import {ShopPage} from "../pages/shop/shop";
+import {EmployeePage} from "../pages/employee/employee";
+import {OrderPage} from "../pages/order/order";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    ShopPage,
+    EmployeePage,
+    OrderPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +33,10 @@ import {FormsModule} from "@angular/forms";
   entryComponents: [
     MyApp,
     HomePage,
-    LoginPage
+    LoginPage,
+    ShopPage,
+    EmployeePage,
+    OrderPage
   ],
   providers: [
     StatusBar,

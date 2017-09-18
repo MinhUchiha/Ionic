@@ -38,4 +38,9 @@ export class LoginPage {
     });
   }
 
+  nextpage(){
+    console.log('next page');
+    this.navCtrl.push('page-main');
+  }
+
 }
